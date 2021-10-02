@@ -3,15 +3,15 @@ def selection(arr):
 
     for i in range(n-1):
         minpos = i
-    for j in range(i,n):
-        if arr[j] < arr[minpos]:
-            minpos = j
+        for j in range(i,n):
+            if arr[j] < arr[minpos]:
+                minpos = j
 
     temp = arr[i]
     arr[i] = arr[minpos]
     arr[minpos] = temp
 
 
-s = [44,11,33,55,22]
-selection(s)
-print(s)
+arr = [44,11,33,55,22]
+selection(arr)
+print(arr)
